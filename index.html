@@ -779,15 +779,16 @@ body.dark-chrome .auto{background:rgba(255,255,255,.08);border-color:rgba(255,25
     <div class="head">
       <div class="kicker r">06 · Implementation</div>
       <h1 class="r d1">Architecture and design patterns</h1>
+      <p class="lede r d2">Every part has one job — so a change happens in one place.</p>
     </div>
     <div class="g2 r d2" style="margin-bottom:18px">
       <div class="card">
         <div class="chip" style="--acc-rgb:178,86,79"><i class="fa-solid fa-server"></i></div>
         <h3>Backend (Laravel) — MVC with a service layer</h3>
         <div class="rows" style="margin-top:10px">
-          <div class="li"><i class="fa-solid fa-circle"></i><span><b>MVC</b> — keeps the logic out of the screens</span></div>
-          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Service layer</b> — the same rules for the app and the dashboard</span></div>
-          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Middleware</b> — checks who is allowed to do what</span></div>
+          <div class="li"><i class="fa-solid fa-circle"></i><span><b>MVC</b> — each layer does one job</span></div>
+          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Service layer</b> — one set of rules for the app and the dashboard</span></div>
+          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Middleware</b> — a trader can't do admin work</span></div>
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:16px">
           <span class="pill" style="background:var(--goldw);color:var(--goldd)">Controller</span>
@@ -803,11 +804,11 @@ body.dark-chrome .auto{background:rgba(255,255,255,.08);border-color:rgba(255,25
         <div class="chip" style="--acc-rgb:107,127,158"><i class="fa-solid fa-mobile-screen"></i></div>
         <h3>Mobile (Flutter) — Domain-Driven Design</h3>
         <div class="rows" style="margin-top:10px">
-          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Presentation</b> — screens and widgets</span></div>
-          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Application</b> — app state, using Riverpod</span></div>
-          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Domain</b> — the core objects, plain Dart</span></div>
-          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Data</b> — talks to the API</span></div>
-          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Core</b> — login tokens, notifications, theme</span></div>
+          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Presentation</b> — the screens</span></div>
+          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Application</b> — app state (Riverpod)</span></div>
+          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Domain</b> — the core objects</span></div>
+          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Data</b> — talks to the server</span></div>
+          <div class="li"><i class="fa-solid fa-circle"></i><span><b>Core</b> — login, notifications, theme</span></div>
         </div>
       </div>
     </div>
