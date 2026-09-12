@@ -1136,7 +1136,7 @@ body.dark-chrome .auto{background:rgba(255,255,255,.08);border-color:rgba(255,25
 (function(){
 'use strict';
 var deck   = document.getElementById('deck');
-var slides = [].slice.call(document.querySelectorAll('.s'));
+var slides = [].slice.call(document.querySelectorAll('.s')).filter(function(slide){ return slide.id !== 's7' && slide.id !== 's10'; });
 var T = slides.length, c = 1;
 var DEL = {d1:.18, d2:.32, d3:.46, d4:.6, d5:.74, d6:.88};
 var ease = function(t){ return 1 - Math.pow(2, -10 * t); };
